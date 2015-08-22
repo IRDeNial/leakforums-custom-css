@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           LeakForums Custom CSS
-// @version        1.0.0
+// @version        1.0.1
 // @description    Allow users to apply custom CSS rules to LeakForums
 // @downloadURL    https://bitbucket.org/notmike101/leakforums-custom-css/raw/master/leakforums_customcss.user.js
 // @updateURL      https://bitbucket.org/notmike101/leakforums-custom-css/raw/master/leakforums_customcss.meta.js
@@ -27,7 +27,7 @@
 		$('.dd ul').append('<li class="customCSSButton" id="customCSSButton"><a href="#">Custom CSS</a></li>');
 
 		// CSS customizer
-		$('body').append('<div style="position:absolute;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);background-color:rgba(250,250,250,0.9);display:block;width:80%;min-height:150px;z-index:500;margin:0 auto;color:#333333;box-shadow:-3px 3px 15px #000000;display:none;" id="cssCustomizer"><div class="header" style="text-align:center;display:block;width:100%;position:relative;top:0;font-size:30px;background-color:#333333;color:#fefefe;padding:15px 0;">CSS Customizer</div><div class="content" style="height:350px;"><textarea id="customCSSInput" class="customCSSInput" style="width:calc(100% - 20px);height:calc(100% - 20px);padding:10px;margin:0;border:0;"></textarea></div><button id="saveCustomCSS" class="saveCustomCSS" style="display:block;width:100%;padding-top:10px;padding-bottom:10px;font-size:20px;">Save Custom CSS</button></div>');
+		$('body').append('<div style="position:fixed;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);background-color:rgba(250,250,250,0.9);display:block;width:80%;min-height:150px;z-index:500;margin:0 auto;color:#333333;box-shadow:-3px 3px 15px #000000;display:none;" id="cssCustomizer"><div class="header" style="text-align:center;display:block;width:100%;position:relative;top:0;font-size:30px;background-color:#333333;color:#fefefe;padding:15px 0;">CSS Customizer</div><div class="content" style="height:350px;"><textarea id="customCSSInput" class="customCSSInput" style="width:calc(100% - 20px);height:calc(100% - 20px);padding:10px;margin:0;border:0;"></textarea></div><button id="saveCustomCSS" class="saveCustomCSS" style="display:block;width:100%;padding-top:10px;padding-bottom:10px;font-size:20px;">Save Custom CSS</button></div>');
 
 		// Allow tabs in textarea
 		$('#customCSSInput').on('keydown', function(e) {
