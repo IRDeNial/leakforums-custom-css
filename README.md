@@ -2,6 +2,8 @@
 
 This script allow users to apply custom CSS rules to LeakForums
 
+Install here: https://bitbucket.org/notmike101/leakforums-custom-css/raw/master/leakforums_customcss.user.js
+
 ### Contribution guidelines ###
 
 * Test in FireFox and chrome
